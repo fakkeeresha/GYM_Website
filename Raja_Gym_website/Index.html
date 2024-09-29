@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife,Gym Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+            <h2>FITNESS CLUB</h2>
+        </div>
+        <ul>
+            <li><a href="#members">Home</a></li>
+            <li><a href="#members">Add Member</a></li>
+            <li><a href="#classes">Slot Book</a></li>
+            <li><a href="#equipment">Equipments</a></li>
+            <li><a href="#equipment">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="image1">
+
+    </div>
+
+    <div class="container">
+        <section id="members" class="section">
+            <h2>Member Management</h2>
+            <form id="memberForm">
+                <input type="text" id="memberName" placeholder="Member Name" required>
+                <input type="number" id="memberAge" placeholder="Age" required>
+                <select id="membershipType">
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                    <option value="vip">VIP</option>
+                </select>
+                <button type="submit">Add Member</button>
+            </form>
+            <h3>Member List</h3>
+            <table id="memberList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Membership</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="classes" class="section">
+            <h2>Sloat book</h2>
+            <form id="classForm">
+                <input type="text" id="className" placeholder="Class Name" required>
+                <input type="text" id="classInstructor" placeholder="Instructor" required>
+                <input type="text" id="classTime" placeholder="Time (e.g., Mon 18:00)" required>
+                <button type="submit">Add Class</button>
+            </form>
+            <h3>Sloat List</h3>
+            <table id="slots">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Instructor</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="equipment" class="section">
+            <h2>Equipments</h2>
+            <form id="equipmentForm">
+                <input type="text" id="equipmentName" placeholder="Equipment Name" required>
+                <input type="number" id="equipmentQuantity" placeholder="Quantity" required>
+                <input type="text" id="equipmentCondition" placeholder="Condition" required>
+                <button type="submit">Add Equipment</button>
+            </form>
+            <h3>Equipment List</h3>
+            <table id="equipmentList">
+                <thead>
+                    <tr>
+                        <th>Equipment</th>
+                        <th>Quantity</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
